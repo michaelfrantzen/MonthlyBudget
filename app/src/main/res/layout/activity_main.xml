@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:id="@+id/remaining-budget-label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remaining Budget"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/starting-weekly-budget-TextView"
+        android:paddingTop="30dp"/>
+    <TextView
+        android:id="@+id/remaining-budget-TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remaining-budget-label"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="40dp"/>
+
+    <TextView
+        android:id="@+id/weekly-budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remaining Budget For This Week"
+        android:textSize="25dp"
+        android:layout_below="@+id/remaining-budget-TextView"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/remaining-weekly-budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="40dp"
+        android:layout_below="@+id/weekly-budget"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="20dp"/>
+
+    <Button
+        android:id="@+id/add-expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Expense"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/remaining-weekly-budget"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="#FFF"/>
+
+    <ImageButton
+        android:id="@+id/spending-overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/info"
+        android:backgroundTint="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/starting-monthly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Starting Monthly Budget"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="40dp"/>
+
+    <TextView
+        android:id="@+id/starting-budget-TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/starting-monthly"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="40dp"/>
+
+    <TextView
+        android:id="@+id/starting-weekly-budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Starting Weekly Budget"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/starting-budget-TextView"/>
+
+    <TextView
+        android:id="@+id/starting-weekly-budget-TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:layout_below="@id/starting-weekly-budget"
+        android:textSize="40dp"/>
+
+</RelativeLayout>

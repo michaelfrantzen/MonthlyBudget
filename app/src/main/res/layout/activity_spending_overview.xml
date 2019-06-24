@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <ImageButton
+        android:id="@+id/reset-button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/restart"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/choice-label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bills or Expenses?"
+        android:layout_centerHorizontal="true"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/choice-label">
+        <RadioButton
+            android:id="@+id/bills-choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClick"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:text="Bills" />
+
+        <RadioButton
+            android:id="@+id/expenses-choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClick"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:text="Expenses" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/list-items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please select bills or expenses"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="24dp"/>
+
+
+</RelativeLayout>
